@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="codereview2.css">
+</head>
+<body>
+		<div class="container">
+
+	<header>
+		<div class="headline">
+			<div class="logo">
+				<img class="logo_pic" src="images/cr2-logo.png">
+			</div>
+			<span class="headline_text">Price comparison</span>
+		</div>
+
+	</header>
+
+
+	<main>
+		
+		<div class="content">
+			<div class="city_comparison">
+				<div class="col">
+					<div class="col_content">
+						<img class="city_image" src="images/cr2-amsterdam.jpg">
+						<div class="text">
+							<div class="textline">
+								<span class="city">Amsterdam</span>
+								<span id="average_price1"></span>
+							</div>
+							<div class="textline">
+								<span class="country">Netherlands</span>
+								<span class="pricetag">Average price</span>
+							</div>
+						</div>
+					</div>
+				</div>	
+
+				<div class="col">
+					<div class="col_content">
+						<img class="city_image" src="images/cr2-london.jpg">
+					
+						<div class="text">
+							<div class="textline">
+								<span class="city">London</span>
+						
+								<span id="average_price2"></span>
+							</div>
+								<div class="textline">
+									<span class="country">United Kingdom</span>
+									<span class="pricetag">Average price</span>
+								</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+
+		<div class="comparison">
+				<div class="comparison_text">
+					<p><span id="first_city">Amsterdam</span> will be more affordable than <span id="second_city">London</span> for the New Year´s celebration.</p>
+					<p>Difference in price: </p>
+					<p id="price_difference">
+					</p>
+				</div>	
+			</div>
+
+
+
+		</div>	
+	</main>
+
+
+	<script type="text/javascript">
+		
+		var cityName = ["Amsterdam", "London"];
+		var country = ["Netherlands", "United Kingkom"];
+		var amsterdam = [1500, 500, 1800, 700];
+		var london = [2500, 1500, 1000, 900];
+
+		function averagePrice(city) {
+			var average = 0;
+		 	
+			for (i = 0; i < city.length; i++) {
+				average += (city[i]);
+			}
+			average = average / city.length;
+
+			return average;
+			}
+
+		document.getElementById("average_price1").innerHTML = "€ " + averagePrice(amsterdam) + ",-";
+
+		document.getElementById("average_price2").innerHTML = "€ " + averagePrice(london) + ",-";
+
+		function priceDifference(a, b) {
+				var difference = averagePrice(a) - averagePrice(b);
+
+				difference = Math.abs(difference);
+	
+
+				return difference;
+			}
+
+		document.getElementById("price_difference").innerHTML = "€ " + priceDifference(amsterdam, london) + ",-";
+	
+	</script>
+
+
+</body>
+</html>

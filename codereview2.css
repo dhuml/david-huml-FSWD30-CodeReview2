@@ -1,0 +1,190 @@
+		* {
+			margin:0;
+			padding:0;
+			border:0;
+		}
+
+		body {
+			background-color: #E5EAEE;
+			font-family: verdana;
+			
+		}
+
+
+
+		.container {
+			width:100%;
+			height:100%;
+		}
+
+		/*header section*/
+
+		.headline {
+			background-color:#003680;
+			display:flex;
+			height:70px;
+			align-items: center;
+		}
+
+		.logo {
+			display:flex;
+			margin:0 5% 0 5%;
+			height:70%;
+
+		}
+
+		.logo_pic {
+			height: 100%;
+			width:auto;
+
+		}
+
+		.headline_text {
+			font-family: Arial, sans-serif;
+			font-weight: 750;
+			font-size: 30px;
+			color:white;
+		}
+
+
+		/*content section*/
+
+		.content {
+			/*border: 1px solid red;*/
+			display:flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			
+		}
+
+		
+		/*city comparison section*/
+
+		.city_comparison {
+			/*border: 2px solid blue;*/
+			display:flex;
+			justify-content: space-around;
+			width: 100%;
+			flex-wrap: wrap;
+		}
+
+		.col {
+			/*border: 1px solid green;*/
+			display:flex;
+			justify-content: space-around;
+			align-items: center;
+			flex:1;
+			margin:30px 0 30px 0;
+		}
+
+
+		
+
+		.col_content {
+			/*border: 1px solid black;*/
+			display:flex;
+			justify-content: center;
+			flex-direction: column;
+			background-color: white;
+		}
+
+		.city_image {
+			height:330px;
+			width:auto;
+		}
+
+		@media screen and (min-width: 1260px) {
+    	
+    			.city_image {
+				height:400px;
+				width:auto;
+			}
+      	}
+
+		.text {
+			margin:7px;
+		}
+
+		.city {
+			
+			font-size: 30px;
+			font-weight:500;
+			color:#21A6D3;
+
+		}
+
+		.average_price {
+			
+			font-size: 25px;
+		}
+
+		.country {
+			font-size:21px;
+			
+			font-weight:300;
+		}
+
+		.pricetag {
+			font-size:21px;
+			
+			font-weight:300;
+		}
+		.textline {
+			display:flex;
+			justify-content:space-between;
+			color:grey;
+		}
+
+
+		/*output text section*/
+
+		.comparison {
+			/*border:3px solid green;*/
+			display:flex;
+			align-items: center;
+			flex-direction: column;
+			width:90%;
+		}
+
+		.comparison_text {
+			font-size:25px;
+			font-weight:200;
+			display:flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			color:#2b2f30;
+		}
+
+		@media screen and (min-width: 1260px) {
+    	
+    			.comparison_text {
+    				font-size:33px;
+    			}
+    			.comparison {
+    				width:100%;
+    			}
+      	}
+
+		#first_city {
+			font-weight: 800;
+			
+		}
+
+		#second_city {
+			font-weight: 800;
+			
+		}
+
+		#price_difference {
+			background-color: #21A6D3;
+			box-sizing: inline-box;
+			padding:20px;
+			border-radius:10px;
+			color:white;
+			font-size:40px;
+			font-weight:bold;
+			margin:20px;
+			white-space: nowrap;
+		}
