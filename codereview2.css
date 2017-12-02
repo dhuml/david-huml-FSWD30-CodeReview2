@@ -50,7 +50,6 @@
 		/*content section*/
 
 		.content {
-			/*border: 1px solid red;*/
 			display:flex;
 			justify-content: center;
 			align-items: center;
@@ -62,7 +61,6 @@
 		/*city comparison section*/
 
 		.city_comparison {
-			/*border: 2px solid blue;*/
 			display:flex;
 			justify-content: space-around;
 			width: 100%;
@@ -70,7 +68,6 @@
 		}
 
 		.col {
-			/*border: 1px solid green;*/
 			display:flex;
 			justify-content: space-around;
 			align-items: center;
@@ -82,7 +79,6 @@
 		
 
 		.col_content {
-			/*border: 1px solid black;*/
 			display:flex;
 			justify-content: center;
 			flex-direction: column;
@@ -140,7 +136,6 @@
 		/*output text section*/
 
 		.comparison {
-			/*border:3px solid green;*/
 			display:flex;
 			align-items: center;
 			flex-direction: column;
